@@ -1,0 +1,255 @@
+.container {
+  width: 100%;
+  position: relative;
+
+  &:nth-child(2n) .columns {
+    background-color: rgba(199, 199, 199, .2);
+  //background-color: map(colors, productos, santander);
+  }
+
+  &:hover .columns {
+    background-color: #ddd;
+  }
+
+  &__inner-text {
+    line-height: 1;
+  }
+
+  &__heading3 {
+    font-family: Roboto Slab, Roboto, Helvetica, sans-serif;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 1em;
+    font-weight: 700;
+    @media screen and (max-width: 660px) {
+      font-size: .8em;
+    }
+  }
+
+  &__ribbon {
+    position: absolute;
+    right: 10px;
+    background: map(colors, productos, santander);
+    padding: 2px 15px;
+    font-size: .8em;
+    color: #fff;
+    border-radius: 3px;
+    @media screen and (max-width: 695px) {
+      bottom: 2px;
+      white-space: pre;
+      padding-top: 0;
+      padding-bottom: 0;
+      font-size: .75em;
+    }
+  }
+
+  &__explainer__inner {
+    max-width: 40em;
+  }
+
+  &__explainer__meaning {
+    margin-bottom: 1em;
+    border: 1px solid #979797;
+    list-style: none;
+    padding-left: 1em;
+    span {
+      background-color: currentColor;
+      width: .75em;
+      height: .75em;
+      display: inline-block;
+      border-radius: 100%;
+      margin-right: .5em;
+    }
+  }
+
+  &__explainer__item {
+    margin-right: 1em;
+    padding: .5em 0;
+    border-bottom: 1px solid #979797;
+    &:last-child {
+      border-bottom: none;
+    }
+
+    h6 {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-family: Lato, sans-serif;
+      color: map(colors, productos, santander);
+      font-size: 11px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.open {
+  display: block;
+}
+
+.columns {
+  width: 100%;
+  display: flex;
+  flex: row nowrap;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.column {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: .75em 1em;
+  position: relative;
+  &:first-child {
+    width: 40%;
+  }
+  &:focus {
+    outline: none;
+    border-left: 1px solid map(colors, productos, santander);
+  }
+
+  @media screen and (max-width: 660px) {
+    padding: .5em;
+    &:first-child {
+      width: 60%;
+    }
+  }
+}
+
+.text {
+  line-height: 1;
+  font-size: .8em;
+}
+
+.explainer {
+  width: 100%;
+  background-color: #fff;
+  color: map(colors, primary, xdark);
+  padding: 2em;
+  z-index: 4;
+  display: none;
+  position: relative;
+  border: 1px solid #979797;
+  margin: 0;
+  @media screen and (max-width: 600px) {
+    padding: 1em;
+  }
+
+  & .titulo {
+    margin-top: 2.5em;
+  }
+
+  .round {
+    font-size: 1.5em;
+  }
+
+  .ganador {
+    text-align: right;
+    font-size: .85em;
+    font-weight: 400;
+    font-family: Roboto Slab, Roboto, Helvetica, sans-serif;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: .5em solid transparent;
+    border-right: .5em solid transparent;
+    border-bottom: .5em solid #979797;
+    top: -.576em;
+    left: 1.9em;
+  }
+
+  & h3 {
+    font-family: Roboto Slab, Roboto, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-left: 15px;
+    text-align: right;
+    margin-bottom: 1em;
+  }
+
+  & p {
+    font-size: 1em;
+
+    &:first-child {
+      margin-top: 2em;
+    }
+  }
+}
+
+.explainer__triangle {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: .5em solid transparent;
+  border-right: .5em solid transparent;
+  border-bottom: .5em solid #fff;
+  top: -.5em;
+  left: 1.9em;
+}
+
+.close_btn {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  background: none;
+  border: 0;
+  top: 6px;
+  padding: 0;
+  & svg {
+    max-width: 100%;
+    height: auto;
+    fill: #979797
+  }
+  &:hover {
+    & svg {
+      fill: map(colors, primary, xdark);
+    }
+  }
+}
+
+.row_open {
+  display: block;
+}
+
+.row_open .columns {
+  background-color: #ddd;
+}
+
+.inner {
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.heading {
+  background-color: map(colors, productos, santander);
+  cursor: default;
+  clear: both;
+
+  & h2 {
+    font-family: Lato,Roboto,Helvetica,sans-serif;
+    margin: 0;
+    color: #fff;
+    font-size: 7.3pt;
+    display: inline-block;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    .columns {
+      background-color: transparent;
+      cursor: default;
+    }
+  }
+}

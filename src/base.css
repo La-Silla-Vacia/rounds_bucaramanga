@@ -1,0 +1,28 @@
+.container {
+  font-family: map(fonts, family-sans);
+  font-size: 16px;
+  display: block;
+}
+
+.select {
+  float: left;
+  margin-top: .25em;
+  margin-bottom: .5em;
+  text-align: left;
+  position: relative;
+  width: 33.333%;
+  > h3 {
+    font-family: Roboto Slab, Georgia, sans-serif;
+    font-size: 1em;
+  }
+
+  small {
+    display: inline-block;
+    color: map(colors, primary, xdark);
+    margin-right: 1em;
+  }
+  @media screen and (max-width: 520px) {
+    width: 100%;
+    padding-left: 0;
+  }
+}
