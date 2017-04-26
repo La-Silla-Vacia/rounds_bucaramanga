@@ -20,7 +20,7 @@ To embed on a webpage use this code:
 <!-- START OF OUR INTERACTIVE -->
 <script type="text/javascript">
 window.rounds_bucaramanga_data = {
-  "name": rounds_bucaramanga,
+  "name": "rounds_bucaramanga",
   "dataUri": "https://lsv-data-visualizations.firebaseio.com/rounds-bucaramanga.json"
 }
 </script>
