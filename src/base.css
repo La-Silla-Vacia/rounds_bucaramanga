@@ -5,10 +5,10 @@
 }
 
 .select {
-  float: left;
+  float: right;
   margin-top: .25em;
   margin-bottom: .5em;
-  text-align: left;
+  text-align: right;
   position: relative;
   width: 33.333%;
   > h3 {

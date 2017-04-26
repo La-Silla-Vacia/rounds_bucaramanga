@@ -36,7 +36,7 @@ export default class Select extends Component {
   handleClick(option) {
     this.setState({
       currentOption: option,
-      open: false
+      // open: false
     });
     this.props.callback(option);
 
