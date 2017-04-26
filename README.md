@@ -25,7 +25,7 @@ window.rounds_bucaramanga_data = {
 }
 </script>
 <div class="lsv-interactive" id="rounds_bucaramanga">
-<img src="https://la-silla-vacia.github.io/rounds_bucaramanga/screenshot.png" class="screenshot" style="width:100%;">
+<img src="https://la-silla-vacia.github.io/rounds_bucaramanga/screenshot.jpg" class="screenshot" style="width:100%;">
 </div>
 <script defer type="text/javascript" src="https://la-silla-vacia.github.io/rounds_bucaramanga/script.js"></script>
 <!-- END OF OUR INTERACTIE -->

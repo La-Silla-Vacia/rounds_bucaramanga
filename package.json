@@ -11,8 +11,8 @@
     "whatwg-fetch": "latest"
   },
   "scripts": {
-    "build": "./node_modules/.bin/webpack --config webpack/dev.config.js && cp index.html dist/index.html && cp screenshot.png dist/screenshot.png",
-    "start": "./node_modules/.bin/webpack --config webpack/dev.config.js --watch && cp index.html dist/index.html && cp screenshot.png dist/screenshot.png",
+    "build": "./node_modules/.bin/webpack --config webpack/dev.config.js && cp index.html dist/index.html && cp screenshot.jpg dist/screenshot.jpg",
+    "start": "./node_modules/.bin/webpack --config webpack/dev.config.js --watch && cp index.html dist/index.html && cp screenshot.jpg dist/screenshot.jpg",
     "minify": "./node_modules/.bin/webpack --config webpack/production.config.js",
     "deploy": "npm run build && npm run minify && npm run upload",
     "upload": "gh-pages -d dist"
