@@ -37,7 +37,7 @@ class PersonRowComponent extends Component {
       )}>
         <div className={s.columns} onClick={this.openBio}>
           <div className={s.column}>
-            <span className={s.text}>{round}</span>
+            <span className={s.text}><strong>{round}</strong></span>
           </div>
           <div className={s.column}>
             <span className={s.text}>{ganador}</span>
